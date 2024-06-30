@@ -1,11 +1,20 @@
 from rest_framework import serializers
-from .models import Status, Employee, Reporting
+from .models import Status, Employee, Reporting, Department
 
 # Create serializer for the status model
 class StatusSerializer(serializers.ModelSerializer):
     class Meta:
         model = Status
         fields = '__all__'
+    
+    #def vali
+
+# Create serializer for the department model
+class DepartmentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Status
+        fields = "__all__"
+
 
 # Create serializer for the employee model
 class EmployeeSerializer(serializers.ModelSerializer):
